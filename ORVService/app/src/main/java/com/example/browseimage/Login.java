@@ -13,9 +13,9 @@ EditText et1;
         setContentView(R.layout.activity_login);
         et1=findViewById(R.id.userid);
 
-        Intent intent=getIntent();
-        String value=intent.getStringExtra("user");
-        et1.setText(value);
+//        Intent intent=getIntent();
+//        String value=intent.getStringExtra("user");
+//        et1.setText(value);
     }
 
 }
