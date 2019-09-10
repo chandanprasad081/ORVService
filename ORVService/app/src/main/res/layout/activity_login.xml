@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context=".Login">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailAddress"
+    android:id="@+id/userid"
+    android:hint="email id"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:hint="password"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/border"
+        android:textColor="#ffffff"
+        android:text="Login"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#1CD5D5"
+        android:layout_marginTop="20dp"
+        android:text="New User? Register Now"/>
+</LinearLayout>
