@@ -16,7 +16,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        et1 = findViewById(R.id.userid);
+        et1 = findViewById(R.id.email);
         createaccount = findViewById(R.id.createaccount);
 
         Intent intent = getIntent();
@@ -26,7 +26,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (value.equals("user")) {
-                    Intent intent=new Intent(Login.this,Create_business.class);
+                    Intent intent=new Intent(Login.this,User_register.class);
                     startActivity(intent);
                 }
                 else if (value.equals("admin")) {

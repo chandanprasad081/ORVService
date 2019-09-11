@@ -20,24 +20,24 @@ public class MainActivity extends AppCompatActivity {
         tx1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, UserDashbord.class);
-                //intent.putExtra("user","user");
+                Intent intent = new Intent(MainActivity.this, Login.class);
+                intent.putExtra("name","user");
                 startActivity(intent);
             }
         });
         tx2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AdminDashbord.class);
-               // intent.putExtra("user","user");
+                Intent intent = new Intent(MainActivity.this, Login.class);
+                intent.putExtra("name","admin");
                 startActivity(intent);
             }
         });
         tx3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, BusinessDashbord.class);
-                //intent.putExtra("user","user");
+                Intent intent = new Intent(MainActivity.this, Login.class);
+                intent.putExtra("name","business");
                 startActivity(intent);
             }
         });
